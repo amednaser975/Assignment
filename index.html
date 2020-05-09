@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>jQuery Practices</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Start Loading -->
+        <section id="loading">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+              </div>
+        </section>
+        <!-- End Loading -->
+
+        <!-- Start Header -->
+        <header id="home" class="block">
+            <div class="layer">
+                <div id="headerText" class="text-center">
+                    <h1>ُEgyption Party</h1>
+                    <p>Let's have Fun</p>
+                </div>
+            </div>
+        </header>
+        <!-- Start Header -->
+
+        <!-- Start Fixed Side Bar -->
+        <section id="sideBar" class="block">
+            <div id="sideBarContent">
+                <div id="closeIcon">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div id="links">
+                    <a href="#home" class="activeA">Home</a>
+                    <a href="#details">Details</a>
+                    <a href="#duration">Duration</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div id="sideBarBtn">
+                <i class="fas fa-bars"></i>
+                <span>Open</span>
+            </div>
+        </section>
+        <!-- End Fixed Side Bar -->
+
+        <!-- Start Singers Section -->
+        <section id="details" class="block m-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="offset-2 col-md-8">
+                        <div class="singer">
+                            <h3 class="activeH">ٍSinger One</h3>
+                            <p class="aciveP">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                        <div class="singer">
+                            <h3>ٍSinger Two</h3>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                        <div class="singer">
+                            <h3>ٍSinger Three</h3>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                        <div class="singer">
+                            <h3>ٍSinger Four</h3>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Singers Section -->
+         <!-- Start Shuffling Cards -->
+         <div class="cards">
+            <div class="card card-one"></div>
+            <div class="card card-two"></div>
+            <div class="card card-three"></div>
+            <div class="card card-four"></div>
+            <div class="card card-five"></div>
+            <div class="card card-six"></div>
+            <div class="card card-seven"></div>
+        </div>
+        <!-- End Shuffling Cards -->
+        <!-- Start Counter Section -->
+        <section id="duration" class="block">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div id="days" class="time">
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div id="hours" class="time">
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div id="minutes" class="time">
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div id="seconds" class="time">
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Counter Section -->
+
+        <!-- Start Dynamic Tabs -->
+        <div class="container" style="text-align: left">
+            <button id="switchTabs" class="btn btn-outline-primary">Switch View</button>
+            <div class="dynamic-tabs">
+                <ul class="tabs-list mb-0 pl-0">
+                    <li class="active" data-content=".content-one">One</li>
+                    <li data-content=".content-two">Two</li>
+                    <li data-content=".content-three">Three</li>
+                    <li data-content=".content-four">Four</li>
+                    <li data-content=".content-five">Five</li>
+                </ul>
+                <div class="content-list">
+                    <div class="content-one">This is Content Number One</div>
+                    <div class="content-two">This is Content Number Two</div>
+                    <div class="content-three">This is Content Number Three</div>
+                    <div class="content-four">This is Content Number Four</div>
+                    <div class="content-five">This is Content Number Five</div>
+                </div>
+            </div>
+        </div>  
+        <!-- End Dynamic Tabs -->
+
+        <!-- Start Contat Section -->
+        <section id="contact" class="block">
+            <div class="container-fluid">
+                <div class="contact-header mb-5">
+                    <h2>JOIN US</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <h3>CONTACT INFO</h3>
+                            <p>Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.</p>
+                            <div class="info-icons">
+                                <div>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span> New Street 22545, Nexa Road, New York City, USA</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-envelope"></i>
+                                    <span> hello@uigrid.com</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span> 001-000-000-000</span>
+                                </div>
+                            </div>
+                            <div class="social-icons mt-5">
+                                <a href="#"> <i class="fab fa-facebook-f fa-lg"></i></a>
+                                <a href="#"> <i class="fab fa-twitter fa-lg"></i></a>
+                                <a href="#"> <i class="fab fa-google-plus-g fa-lg"></i></a>
+                                <a href="#"> <i class="fab fa-github fa-lg"></i></a>
+                                <a href="#"> <i class="fab fa-behance fa-lg"></i></a>
+                                <a href="#"> <i class="fab fa-dribbble fa-lg"></i></a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <input name="uName" class="form-control px-2 py-3" type="text" placeholder="Enter Your Name"/><br>
+                            <input name="uEmail" class="form-control px-2 py-3" type="email" placeholder="Enter Your Email"/><br>
+                            <textarea id="message" maxlength="100" class="form-control px-2 py-3" name="uMessage" placeholder="Enter Your Message"></textarea><br>
+                            <p id="textareaP">
+                                <span id="maxChars">100</span>
+                                Character Reamining
+                            </p>
+                            <button id="submitBtn" class="btn btn-outline-danger">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contat Section -->
+
+        <!-- Start Scroll To Top button -->
+        <a href="#" class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <!-- End Scroll To Top button -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
